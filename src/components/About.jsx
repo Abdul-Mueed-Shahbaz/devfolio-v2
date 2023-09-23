@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./helpers/Header";
 
-const About = () => {
+const About = ({ heading, desc_1, desc_2 }) => {
   return (
     <div
       name="about"
@@ -10,21 +10,11 @@ const About = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <Header heading="About"></Header>
+          <Header heading={heading}></Header>
         </div>
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea modi
-          obcaecati quam, hic alias. Nulla nostrum inventore sint voluptatibus
-          dolore repellat debitis rerum error voluptate. Deleniti ut ipsam
-          tempora!
-        </p>
+        <p className="text-xl mt-20">{desc_1}</p>
         <br />
-        <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias in
-          nesciunt, consequuntur adipisci beatae nulla eius. Nobis ipsam tenetur
-          quo suscipit praesentium odio repudiandae, eum provident laborum
-          voluptatem? Recusandae, dicta?
-        </p>
+        <p className="text-xl">{desc_2}</p>
       </div>
     </div>
   );

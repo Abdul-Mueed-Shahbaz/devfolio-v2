@@ -1,40 +1,7 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/arrayDestruct.jpg";
-import reactWeather from "../assets/portfolio/arrayDestruct.jpg";
-
 import Header from "./helpers/Header";
 
-const Portfolio = () => {
-  const portfolios = [
-    {
-      src: arrayDestruct,
-      link: "",
-    },
-    {
-      src: reactParallax,
-      link: "",
-    },
-    {
-      src: navbar,
-      link: "",
-    },
-    {
-      src: reactSmooth,
-      link: "",
-    },
-    {
-      src: installNode,
-      link: "",
-    },
-    {
-      src: reactWeather,
-      link: "",
-    },
-  ];
+const Portfolio = ({ heading, tagline, portfolios }) => {
   return (
     <div
       name="portfolio"
@@ -42,10 +9,7 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 px-4">
-          <Header
-            heading="Portfolio"
-            tagline="Check out some of my work right here"
-          ></Header>
+          <Header heading={heading} tagline={tagline}></Header>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 md:px-6 sm:px-0">
           {portfolios.map(({ src }, index) => {

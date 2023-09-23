@@ -1,50 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const SocialLinks = () => {
-  const links = [
-    {
-      child: (
-        <>
-          Linkedin
-          <FaLinkedin size={30}></FaLinkedin>
-        </>
-      ),
-      href: "https://linkedin.com/",
-      style: "rounded-tr-md",
-    },
-    {
-      child: (
-        <>
-          Github
-          <FaGithub size={30}></FaGithub>
-        </>
-      ),
-      href: "https://github.com/",
-    },
-    {
-      child: (
-        <>
-          Mail
-          <HiOutlineMail size={30}></HiOutlineMail>
-        </>
-      ),
-      href: "mailto:abdulmueedshahbaz@gmail.com",
-    },
-    {
-      child: (
-        <>
-          Resume
-          <BsFillPersonLinesFill size={30}></BsFillPersonLinesFill>
-        </>
-      ),
-      href: "/Abdul's Resume.pdf",
-      style: "rounded-br-md",
-      download: true,
-    },
-  ];
+const SocialLinks = ({ links }) => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
