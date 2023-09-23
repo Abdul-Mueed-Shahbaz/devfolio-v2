@@ -6,6 +6,8 @@ import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/arrayDestruct.jpg";
 import reactWeather from "../assets/portfolio/arrayDestruct.jpg";
 
+import Header from "./helpers/Header";
+
 const Portfolio = () => {
   const portfolios = [
     {
@@ -40,10 +42,10 @@ const Portfolio = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 px-4">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
-          </p>
-          <p className="py-6">Check out some of my work right here</p>
+          <Header
+            heading="Portfolio"
+            tagline="Check out some of my work right here"
+          ></Header>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 md:px-6 sm:px-0">
           {portfolios.map(({ src }, index) => {
