@@ -6,7 +6,6 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const SocialLinks = () => {
   const links = [
     {
-      id: 1,
       child: (
         <>
           Linkedin
@@ -17,7 +16,6 @@ const SocialLinks = () => {
       style: "rounded-tr-md",
     },
     {
-      id: 2,
       child: (
         <>
           Github
@@ -27,7 +25,6 @@ const SocialLinks = () => {
       href: "https://github.com/",
     },
     {
-      id: 3,
       child: (
         <>
           Mail
@@ -37,7 +34,6 @@ const SocialLinks = () => {
       href: "mailto:abdulmueedshahbaz@gmail.com",
     },
     {
-      id: 4,
       child: (
         <>
           Resume
@@ -50,9 +46,9 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, href, style, download, child }) => {
+        {links.map(({ href, style, download, child }, index) => {
           return (
             <li
               className={
@@ -60,7 +56,7 @@ const SocialLinks = () => {
                 " " +
                 style
               }
-              key={id}
+              key={index}
             >
               <a
                 href={href}
