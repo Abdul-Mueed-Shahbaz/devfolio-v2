@@ -1,3 +1,5 @@
+import HeroImage from "../../assets/heroImage.png";
+
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import javascript from "../../assets/javascript.png";
@@ -25,6 +27,7 @@ export const APP_CONSTS = {
   HOME: {
     HEADING: "I'm a Full Stack Developer",
     DESC: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo vero, ut vel vitae ratione aperiam dolore autem. Voluptatum nobis possimus soluta laboriosam aliquid! Officia quos incidunt nisi harum rerum ducimus?",
+    DEV: HeroImage,
   },
 
   ABOUT: {

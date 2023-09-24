@@ -16,7 +16,11 @@ function App() {
         tagline={APP_CONSTS.NAVBAR.TAGLINE}
         links={APP_CONSTS.NAVBAR.LINKS}
       />
-      <Home heading={APP_CONSTS.HOME.HEADING} desc={APP_CONSTS.HOME.DESC} />
+      <Home
+        heading={APP_CONSTS.HOME.HEADING}
+        desc={APP_CONSTS.HOME.DESC}
+        devImg={APP_CONSTS.HOME.DEV}
+      />
       <About
         heading={APP_CONSTS.ABOUT.HEADING}
         desc_1={APP_CONSTS.ABOUT.DESC_1}

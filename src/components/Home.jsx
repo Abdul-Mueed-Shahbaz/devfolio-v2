@@ -1,9 +1,8 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.gif";
 import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-const Home = ({ heading, desc }) => {
+const Home = ({ heading, desc, devImg }) => {
   return (
     <div>
       <div
@@ -30,7 +29,7 @@ const Home = ({ heading, desc }) => {
 
           <div>
             <img
-              src={HeroImage}
+              src={devImg}
               alt="Persona"
               className="rounded-2xl mx-auto w-2/3 md:w-full"
             />
