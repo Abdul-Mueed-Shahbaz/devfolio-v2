@@ -11,12 +11,11 @@ import django from "../../assets/django.png";
 import quasar from "../../assets/quasar.png";
 import mysqlworkbench from "../../assets/mysqlworkbench.png";
 
-import arrayDestruct from "../../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../../assets/portfolio/installNode.jpg";
-import navbar from "../../assets/portfolio/navbar.jpg";
-import reactParallax from "../../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../../assets/portfolio/arrayDestruct.jpg";
-import reactWeather from "../../assets/portfolio/arrayDestruct.jpg";
+import devfolio from "../../assets/portfolio/devfolio.png";
+import authmircoservice from "../../assets/portfolio/authmicroservice.png";
+import eccomerce from "../../assets/portfolio/eccomerce.png";
+import chatapp from "../../assets/portfolio/chatapp.png";
+import futapp from "../../assets/portfolio/futapp.png";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -106,28 +105,29 @@ export const APP_CONSTS = {
     TAGLINE: "Check out some of my work right here",
     PORTFOLIOS: [
       {
-        src: arrayDestruct,
-        link: "",
+        src: devfolio,
+        code: "https://github.com/Abdul-Mueed-Shahbaz/DevFolio",
+        demo: "https://abdulsdevfolio.vercel.app/#/",
       },
       {
-        src: reactParallax,
-        link: "",
+        src: authmircoservice,
+        code: "https://github.com/Abdul-Mueed-Shahbaz/Auth-Microservice",
+        demo: "",
       },
       {
-        src: navbar,
-        link: "",
+        src: chatapp,
+        code: "https://github.com/Abdul-Mueed-Shahbaz/Secure_Channels-Hub",
+        demo: "",
       },
       {
-        src: reactSmooth,
-        link: "",
+        src: eccomerce,
+        code: "https://github.com/Abdul-Mueed-Shahbaz/Eccomerce-Application",
+        demo: "",
       },
       {
-        src: installNode,
-        link: "",
-      },
-      {
-        src: reactWeather,
-        link: "",
+        src: futapp,
+        code: "",
+        demo: "https://github.com/Abdul-Mueed-Shahbaz/FutTradingBot",
       },
     ],
   },

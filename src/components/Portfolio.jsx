@@ -2,6 +2,18 @@ import React from "react";
 import Header from "./helpers/Header";
 
 const Portfolio = ({ heading, tagline, portfolios }) => {
+  const buttonClasses =
+    "w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 flex justify-center items-center";
+
+  const buttonDisabled =
+    "cursor-not-allowed opacity-50 disabled:opacity-50 disabled:cursor-not";
+
+  const handleClick = (e, href) => {
+    if (!href) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <div
       name="portfolio"
@@ -12,21 +24,43 @@ const Portfolio = ({ heading, tagline, portfolios }) => {
           <Header heading={heading} tagline={tagline}></Header>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 md:px-6 sm:px-0">
-          {portfolios.map(({ src }, index) => {
+          {portfolios.map(({ src, demo, code }, index) => {
             return (
               <div key={index} className="shadow-md shadow-gray-600 rounded-lg">
-                <img
-                  src={src}
-                  alt=""
-                  className="rounded-md duration-100 hover:scale-105"
-                />
+                <div>
+                  <img
+                    src={src}
+                    alt=""
+                    className="rounded-md duration-100 hover:scale-105 h-full md:min-h-[174px]"
+                  />
+                </div>
                 <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    className={
+                      demo
+                        ? buttonClasses
+                        : buttonClasses + " " + buttonDisabled
+                    }
+                    href={demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => handleClick(e, demo)}
+                  >
                     Demo
-                  </button>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  </a>
+                  <a
+                    href={code}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={
+                      code
+                        ? buttonClasses
+                        : buttonClasses + " " + buttonDisabled
+                    }
+                    onClick={(e) => handleClick(e, code)}
+                  >
                     Code
-                  </button>
+                  </a>
                 </div>
               </div>
             );
