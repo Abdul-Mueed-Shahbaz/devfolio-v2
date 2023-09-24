@@ -26,16 +26,16 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 export const APP_CONSTS = {
   HOME: {
     HEADING: "I'm a Full Stack Developer",
-    DESC: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo vero, ut vel vitae ratione aperiam dolore autem. Voluptatum nobis possimus soluta laboriosam aliquid! Officia quos incidunt nisi harum rerum ducimus?",
+    DESC: "Proficient in HTML, CSS, JavaScript, Python, Vue.js, Quasar, Django, MySQL, React.js, and more. Crafting the digital future with expertise and creativity, turning ideas into stunning web experiences that leave a lasting impact.",
     DEV: HeroImage,
   },
 
   ABOUT: {
     HEADING: "About",
     DESC_1:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ea modi obcaecati quam, hic alias. Nulla nostrum inventore sint voluptatibus dolore repellat debitis rerum error voluptate. Deleniti ut ipsam tempora!",
+      "Aspiring to learn, innovate, and excel in the world of technology. My journey as a developer is marked by a thirst for knowledge and a commitment to solving complex problems. I bring expertise in HTML, CSS, JavaScript, Python, Vue.js, Quasar, Django, MySQL, React.js, and more to create captivating web experiences.",
     DESC_2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias in nesciunt, consequuntur adipisci beatae nulla eius. Nobis ipsam tenetur quo suscipit praesentium odio repudiandae, eum provident laborum voluptatem? Recusandae, dicta?",
+      "With a blend of creativity and dedication, I'm on a mission to shape the digital landscape, one project at a time.",
   },
 
   SOCIALS: {
